@@ -1,0 +1,7 @@
+If you want to add a new folder with a new Julia project, do the following:
+- create a new folder "project_name";
+- create the "main.jl" file inside inside the folder;
+- Type include("gaps/main.jl") in the QuantumProjects module in main.jl in the 
+  QuantumProjects folder
+- Inside main.jl of of ProjectName folder use include("../utils/...") and using ... 
+  to use utils.

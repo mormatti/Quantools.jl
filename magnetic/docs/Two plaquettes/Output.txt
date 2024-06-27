@@ -1,0 +1,42 @@
+Number of physical states: 198
+Number of vortices states: 9
+Number of extended states: 1782
+
+Output of the program: (Π = M*M', P = M'*M)
+
+Rk(M) = 198
+Rk(P) = 198
+Rk(Π) = 198
+
+Tr(M) = 198.0 + 0.0im
+Tr(P) = 198.0000000000046 + 0.0im
+Tr(Π) = 198.0 + 0.0im
+
+det(M)   = 0.0 + 0.0im
+det(P) = 0.0 + 0.0im
+det(Π) = 0.0 + 0.0im
+
+M Hermitian: false
+P Hermitian: true
+Π Hermitian: true
+
+M idempotent: true
+P idempotent: true
+Π idempotent: true
+
+Number of non-zero eigenvalues: 198
+
+Groundstate energy of H: -4.596647685586197
+
+Groundstate energy of P * H: -4.596647685586224
+
+Norm of difference of the two groundstates: 3.691678469008796e-14
+
+Norm of difference of second excited states: 1.4142135623730951
+
+
+
+
+
+
+
