@@ -36,12 +36,27 @@ function subtractZZ(n, a, b)
     return ZZ(n, a - b)
 end
 
+function is_same_kind(a, b)
+    # Check if both are integers
+    if isinteger(a) && isinteger(b)
+        return true
+    end
+
+    # Check if both are semi-integers
+    if (a % 1 == 0.5) && (b % 1 == 0.5)
+        return true
+    end
+
+    # If neither condition is met, they are not of the same kind
+    return false
+end
+
 function subtractSpin(sx, sy, a, b)
     if a > sx || b > sx || a < -sx || b < -sx
         return nothing
     end
     c = a - b
-    if c > sy || c < -sy
+    if c > sy || c < -sy || !is_same_kind(sy, c)
         return nothing
     end
     return c

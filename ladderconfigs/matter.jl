@@ -15,7 +15,7 @@ end
 
 function is_same_kind(a, b)
     # Check if both are integers
-    if isinteger(a) && isinteger(b)
+    if isInteger(a) && isInteger(b)
         return true
     end
 
@@ -29,7 +29,7 @@ function is_same_kind(a, b)
 end
 
 # Helper function to check if a number is an integer
-function isinteger(x)
+function isInteger(x)
     return x % 1 == 0
 end
 
