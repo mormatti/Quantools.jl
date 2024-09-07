@@ -66,7 +66,7 @@ Outputs:
 - The translation operator `T`.
 """
 
-translation_operator(d::Integer,L::Integer)::Matrix{ComplexF64}
+function translation_operator(d::Integer,L::Integer)::Matrix{ComplexF64}
     N::Integer = d^L
     𝐓::Matrix{ComplexF64} = zeros(N,N)
 
@@ -88,6 +88,5 @@ translation_operator(d::Integer,L::Integer)::Matrix{ComplexF64}
             𝐓[j, ((d*(j-1)+1)%N) + indL - 1] = 1
         end
     end
-
     return 𝐓
 end
